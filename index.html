@@ -1,3 +1,5 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CV — Nguyễn Thị Hồng — QA Engineer</title>
 <meta name="description" content="Keppel Tech / ATS CV — Nguyễn Thị Hồng, QA Engineer với ~3 năm kinh nghiệm kiểm thử API và chức năng.">
 
@@ -189,6 +191,52 @@ p { font-size: 10pt; line-height: 1.55; }
   margin-top: 32px;
   padding-top: 8px;
   border-top: 1px solid var(--border);
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 12px 14px 32px;
+  }
+
+  .conf-bar {
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+
+  .cv-header {
+    padding: 14px 16px;
+  }
+
+  .cv-header h1 {
+    font-size: 1.35rem;
+  }
+
+  .cv-header .subtitle {
+    font-size: 1.05rem;
+  }
+
+  /* Stats table: each tr becomes 2×(lbl+val) stacked */
+  .stats,
+  .stats tbody { display: block; }
+
+  .stats tr {
+    display: grid;
+    grid-template-columns: 38% 62%;
+    margin-bottom: 0;
+  }
+
+  .stats td {
+    display: block;
+    width: auto !important;
+  }
+
+  .stats .lbl { white-space: normal; }
+
+  /* Skills: single column on mobile */
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
 }
 
 @media print {
