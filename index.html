@@ -1,0 +1,335 @@
+<title>CV — Nguyễn Thị Hồng — QA Engineer</title>
+<meta name="description" content="Keppel Tech / ATS CV — Nguyễn Thị Hồng, QA Engineer với ~3 năm kinh nghiệm kiểm thử API và chức năng.">
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy:   #1B3558;
+  --orange: #BF5F28;
+  --border: #CCCBC6;
+  --bg:     #FAFAF8;
+  --text:   #222222;
+  --muted:  #666666;
+  --white:  #FFFFFF;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+  font-size: 10.5pt;
+  color: var(--text);
+  background: var(--bg);
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 20px 24px 48px;
+  line-height: 1.5;
+}
+
+/* ── Confidential bar ── */
+.conf-bar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 8pt;
+  color: var(--muted);
+  margin-bottom: 6px;
+  letter-spacing: 0.03em;
+}
+
+/* ── Header ── */
+.cv-header {
+  background: var(--navy);
+  color: var(--white);
+  padding: 17px 22px 19px;
+  margin-bottom: 14px;
+}
+
+.cv-header h1 {
+  font-size: 1.85rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+.cv-header .subtitle {
+  font-weight: 300;
+  font-size: 1.5rem;
+  opacity: 0.88;
+}
+
+/* ── Stats table ── */
+.stats {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-size: 9.5pt;
+}
+
+.stats td {
+  border: 1px solid var(--border);
+  padding: 6px 10px;
+  vertical-align: top;
+}
+
+.stats .lbl {
+  color: var(--orange);
+  font-weight: 600;
+  width: 15%;
+  white-space: nowrap;
+}
+
+.stats .val { width: 35%; }
+
+/* ── Section headings ── */
+.section-h {
+  color: var(--orange);
+  font-size: 9.5pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: 1.5px solid var(--orange);
+  padding-bottom: 3px;
+  margin: 22px 0 10px;
+}
+
+/* ── Body text ── */
+p { font-size: 10pt; line-height: 1.55; }
+
+/* ── Skills grid ── */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 40px;
+}
+
+.skill-cat {
+  font-weight: 600;
+  font-size: 9.5pt;
+  color: var(--orange);
+  margin-bottom: 2px;
+}
+
+.skill-desc {
+  font-size: 9.5pt;
+  line-height: 1.4;
+}
+
+/* ── Projects ── */
+.project { margin-bottom: 18px; }
+
+.proj-header-line {
+  font-size: 10pt;
+  line-height: 1.4;
+  margin-bottom: 1px;
+}
+
+.proj-name  { font-weight: 700; }
+.proj-type  { color: var(--muted); font-size: 9.5pt; }
+
+.proj-role-line {
+  font-size: 9.5pt;
+  color: var(--muted);
+  margin-bottom: 2px;
+}
+
+.proj-role { font-weight: 700; color: var(--text); }
+
+.proj-stack {
+  font-size: 9.5pt;
+  margin-bottom: 5px;
+}
+
+.proj-stack-lbl {
+  font-weight: 700;
+  color: var(--orange);
+}
+
+.blist { list-style: none; padding: 0; }
+
+.blist li {
+  padding-left: 14px;
+  position: relative;
+  font-size: 9.5pt;
+  line-height: 1.55;
+  margin-bottom: 2px;
+}
+
+.blist li::before {
+  content: '▪';
+  position: absolute;
+  left: 0;
+}
+
+/* ── Certifications ── */
+.cert-list { list-style: none; padding: 0; }
+
+.cert-list li {
+  padding-left: 14px;
+  position: relative;
+  font-size: 10pt;
+  line-height: 1.75;
+}
+
+.cert-list li::before { content: '▪'; position: absolute; left: 0; }
+
+/* ── Education ── */
+.edu-deg  { font-weight: 700; font-size: 10.5pt; }
+.edu-inst { font-size: 9.5pt; color: var(--muted); }
+
+/* ── Languages ── */
+.lang-entry { font-size: 10.5pt; line-height: 1.85; }
+.lang-name  { font-weight: 700; }
+.lang-sep   { margin: 0 5px; color: var(--muted); }
+
+/* ── Footer ── */
+.cv-footer {
+  text-align: center;
+  font-size: 8pt;
+  color: #9a9a9a;
+  margin-top: 32px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+
+@media print {
+  body { padding: 0; background: white; }
+}
+</style>
+
+
+<header class="cv-header">
+  <h1>Nguyễn Thị Hồng <span class="subtitle">— QA Engineer — API &amp; Functional Testing</span></h1>
+</header>
+
+<table class="stats">
+  <tr>
+    <td class="lbl">Experience</td>
+    <td class="val">~3 years</td>
+    <td class="lbl">Primary stack</td>
+    <td class="val">API &amp; functional testing (Postman, SOAPUI, SQL)</td>
+  </tr>
+  <tr>
+    <td class="lbl">Secondary skills</td>
+    <td class="val">Azure DevOps, Jira, regression and E2E testing</td>
+    <td class="lbl">English (CEFR)</td>
+    <td class="val">B1</td>
+  </tr>
+  <tr>
+    <td class="lbl">Date of Birth</td>
+    <td class="val">26/07/2003</td>
+    <td class="lbl">Location</td>
+    <td class="val">Hanoi, Vietnam</td>
+  </tr>
+  <tr>
+    <td class="lbl">Availability</td>
+    <td class="val">2 weeks notice</td>
+    <td class="lbl">ISTQB</td>
+    <td class="val">Foundation Level</td>
+  </tr>
+</table>
+
+<h2 class="section-h">Professional Summary</h2>
+<p>QA engineer with around 3 years of experience across asset management, aviation services, and skincare technology. Skilled across the full QA lifecycle: requirements clarification, test case design, manual execution, API and database testing, defect management, and reporting. Currently delivering QA for a skincare and beauty tech platform; previous experience includes enterprise digitisation for an aviation ground services firm and an equipment rental management system.</p>
+
+<h2 class="section-h">Core Technical Skills</h2>
+<div class="skills-grid">
+  <div>
+    <div class="skill-cat">Testing Types</div>
+    <div class="skill-desc">Functional, regression, backward compatibility, E2E, UI/UX, API testing</div>
+  </div>
+  <div>
+    <div class="skill-cat">API &amp; Integration</div>
+    <div class="skill-desc">Postman, SOAPUI; REST API testing across modules and partner integrations</div>
+  </div>
+  <div>
+    <div class="skill-cat">Databases</div>
+    <div class="skill-desc">SQL Server — data validation and test data creation</div>
+  </div>
+  <div>
+    <div class="skill-cat">Test Management</div>
+    <div class="skill-desc">Jira, Azure DevOps, Trello; test plan + test case authoring</div>
+  </div>
+  <div>
+    <div class="skill-cat">Domains</div>
+    <div class="skill-desc">Skincare / beauty tech (current), aviation ground services, asset rental management</div>
+  </div>
+  <div>
+    <div class="skill-cat">Techniques</div>
+    <div class="skill-desc">Equivalence partitioning, boundary value analysis, exploratory testing</div>
+  </div>
+  <div>
+    <div class="skill-cat">Process</div>
+    <div class="skill-desc">Strong SDLC / STLC; requirement clarification with BA/SA/Dev; bug triage and reporting</div>
+  </div>
+  <div>
+    <div class="skill-cat">Languages</div>
+    <div class="skill-desc">Vietnamese (native), English (working)</div>
+  </div>
+</div>
+
+<h2 class="section-h">Project Experience</h2>
+
+<div class="project">
+  <div class="proj-header-line">
+    <span class="proj-name">bellePro</span>&nbsp;<span class="proj-type">· Skincare &amp; beauty tech — product management and e-commerce</span>
+  </div>
+  <div class="proj-role-line">
+    <span class="proj-role">QA Engineer</span>&nbsp;· Team of 6 · 10 months (current)
+  </div>
+  <div class="proj-stack"><span class="proj-stack-lbl">Stack:</span> Jira, Postman, REST APIs, web + mobile applications</div>
+  <ul class="blist">
+    <li>QA for a skincare platform covering product cataloguing, order management, user profiles, and subscription flows.</li>
+    <li>Clarified user stories with BA, PO, and developers; contributed to UX improvements across web and mobile interfaces.</li>
+    <li>Designed test cases and scenarios for functional flows, backward compatibility, and end-to-end user journeys.</li>
+    <li>Performed API testing using Postman; validated data integrity and business logic via SQL queries.</li>
+    <li>Created test data; executed across test, staging, and production environments; logged and verified defects through to closure.</li>
+  </ul>
+</div>
+
+<div class="project">
+  <div class="proj-header-line">
+    <span class="proj-name">GAL</span>&nbsp;<span class="proj-type">· Aviation services — enterprise digitisation of ground cleaning operations</span>
+  </div>
+  <div class="proj-role-line">
+    <span class="proj-role">QA Engineer</span>&nbsp;· Team of 9 · 1 year 2 months
+  </div>
+  <div class="proj-stack"><span class="proj-stack-lbl">Stack:</span> Jira, Postman, SQL Server, web application</div>
+  <ul class="blist">
+    <li>QA for a digitisation project for a Vietnamese aviation ground services company: aircraft cleaning schedules, crew task assignments, service checklists, and operational reporting.</li>
+    <li>Tested core business flows including task creation, crew assignment, service completion, and management reporting modules.</li>
+    <li>Performed API testing for back-end service integrations; clarified BRD and functional specifications with BA and Dev.</li>
+    <li>Applied equivalence partitioning and boundary value analysis; designed and executed test cases in SIT and UAT environments.</li>
+    <li>Logged and tracked defects in Jira through to resolution; reported test status daily to project leadership.</li>
+  </ul>
+</div>
+
+<div class="project">
+  <div class="proj-header-line">
+    <span class="proj-name">LMS</span>&nbsp;<span class="proj-type">· Asset management — equipment rental and lifecycle tracking</span>
+  </div>
+  <div class="proj-role-line">
+    <span class="proj-role">QA Tester</span>&nbsp;· Cross-functional · ~1 year
+  </div>
+  <div class="proj-stack"><span class="proj-stack-lbl">Stack:</span> Jira, Postman, SQL Server, Excel</div>
+  <ul class="blist">
+    <li>QA for an equipment rental management system covering asset cataloguing, rental booking, return processing, and billing.</li>
+    <li>Designed test cases for rental lifecycle flows, edge cases across booking and return scenarios, and billing data validation.</li>
+    <li>Performed database testing using SQL to verify rental records, asset status, and billing accuracy.</li>
+    <li>Conducted regression testing for each release cycle; daily status reporting to project leadership.</li>
+  </ul>
+</div>
+
+<h2 class="section-h">Certifications &amp; Training</h2>
+<ul class="cert-list">
+  <li>ISTQB Foundation Level — Certified Tester</li>
+  <li>Domain exposure in skincare / beauty tech and aviation ground services operations</li>
+</ul>
+
+<h2 class="section-h">Education</h2>
+<div class="edu-deg">Bachelor of Information Technology</div>
+<div class="edu-inst">Hanoi University of Education · 4 years</div>
+
+<h2 class="section-h">Languages</h2>
+<div class="lang-entry"><span class="lang-name">English</span><span class="lang-sep">—</span>B1<span class="lang-sep">—</span>working proficiency</div>
+<div class="lang-entry"><span class="lang-name">Vietnamese</span><span class="lang-sep">—</span>Native</div>
+
